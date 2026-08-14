@@ -381,6 +381,18 @@ button { font-family: inherit; cursor: pointer; }
 .card h3 { font-size: 1.3rem; margin-bottom: 0.6rem; letter-spacing: 0.01em; position: relative; z-index: 1; }
 .card p { color: #5a4f45; font-size: 0.95rem; margin: 0; position: relative; z-index: 1; }
 
+/* cards com foto real do produto ao fundo (definida via --card-img inline) */
+.card.photo-card {
+  background-image: linear-gradient(165deg, rgba(42, 33, 26, 0.82), rgba(42, 33, 26, 0.64)), var(--card-img);
+  background-size: cover;
+  background-position: center;
+  color: var(--creme);
+}
+.card.photo-card .card-num { color: rgba(243, 236, 230, 0.28); }
+.card.photo-card .card-icon { color: var(--creme); }
+.card.photo-card h3 { color: var(--creme); }
+.card.photo-card p { color: rgba(243, 236, 230, 0.88); }
+
 .card.featured {
   grid-column: span 2;
   grid-row: span 2;
@@ -390,6 +402,9 @@ button { font-family: inherit; cursor: pointer; }
   flex-direction: column;
   justify-content: flex-end;
   padding: 2.6rem;
+}
+.card.photo-card.featured {
+  background-image: linear-gradient(165deg, rgba(124, 0, 0, 0.88), rgba(92, 0, 0, 0.8)), var(--card-img);
 }
 .card.featured .card-num { color: rgba(243, 236, 230, 0.22); font-size: 3.4rem; }
 .card.featured .card-icon { color: var(--creme); width: 60px; height: 60px; }

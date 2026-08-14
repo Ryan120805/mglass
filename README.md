@@ -36,8 +36,21 @@ vidro/
 ├── js/main.js            → menu mobile, ano no rodapé, formulário de contato
 ├── assets/logo/           → logos e emblemas oficiais da MGLASS (SVG + PNG)
 ├── assets/catalogo/        → catálogo em PDF para download (seção "Produtos")
+├── assets/img/              → fotos reais de produtos e logos de parceiros
 └── README.md
 ```
+
+Os 6 cards da seção "Produtos" usam foto real de fundo (recortada do catálogo
+fornecido pelo cliente), com um degradê escuro por cima para o texto continuar
+legível. A imagem de cada card é definida via CSS custom property inline, ex.:
+
+```html
+<article class="card photo-card shine" style="--card-img: url('../assets/img/produto-cantoneiras.jpg');">
+```
+
+⚠️ Repare no `../` no caminho — como o `var(--card-img)` é consumido dentro de
+`css/style.css`, o `url()` é resolvido a partir da pasta `css/`, não da raiz
+do site. Usar `url('assets/img/...')` (sem o `../`) quebra a imagem.
 
 ## O que falta preencher (dados reais)
 
