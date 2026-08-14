@@ -501,7 +501,7 @@ button { font-family: inherit; cursor: pointer; }
 .parceiros { padding: var(--espaco-secao) 0; }
 .parceiros-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
   margin-top: 3rem;
 }
@@ -515,7 +515,7 @@ button { font-family: inherit; cursor: pointer; }
   justify-content: center;
   padding: 1rem;
   text-align: center;
-  transition: transform var(--transicao), border-color var(--transicao);
+  transition: transform var(--transicao), border-color var(--transicao), box-shadow var(--transicao);
 }
 .parceiro-item:hover { transform: translateY(-3px); border-color: rgba(124, 0, 0, 0.2); }
 .parceiro-item span {
@@ -524,6 +524,20 @@ button { font-family: inherit; cursor: pointer; }
   font-size: 1.05rem;
   letter-spacing: 0.01em;
   color: var(--grafite);
+}
+/* itens com logo real dos parceiros (ex.: Acal, Normatel) — em destaque */
+.parceiro-item.logo {
+  padding: 1.4rem;
+  border-color: rgba(124, 0, 0, 0.16);
+  box-shadow: 0 10px 28px -18px rgba(42, 33, 26, 0.35);
+}
+.parceiro-item.logo img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 4px;
+  object-fit: contain;
 }
 
 /* ---------- Diferenciais ---------- */

@@ -59,19 +59,19 @@ Todos os pontos abaixo estão marcados com comentários `<!-- TODO -->` (HTML) o
   expansão para Norte/Nordeste desde 2022) extraídos da apresentação
   institucional da empresa — revisar/ajustar redação com o cliente se
   necessário.
-- **Parceiros**: os 8 itens em `#parceiros` são placeholders de texto (nome da
-  empresa), sem logotipo. Troque cada `<div class="parceiro-item">` por uma
-  `<img>` com o logo real do parceiro:
+- **Parceiros**: 6 itens em `#parceiros`. **Acal** e **Normatel** já usam os
+  logos reais (`assets/img/parceiro-acal.jpg` e `parceiro-normatel.jpg`,
+  cedidos pelo cliente), com a classe extra `.parceiro-item.logo`. Os outros 4
+  (Kildary Home Center, Flux, Construtop, Amilco) ainda são placeholders de
+  texto — para trocar por logo real, siga o mesmo padrão:
 
   ```html
-  <div class="parceiro-item">
-    <img src="assets/img/parceiro-kildary.png" alt="Kildary Home Center">
+  <div class="parceiro-item logo" data-reveal>
+    <img src="assets/img/parceiro-kildary.jpg" alt="Kildary Home Center" loading="lazy">
   </div>
   ```
 
-  Salve os logos em `assets/img/` (pasta já criada). Pode ser necessário
-  ajustar `.parceiro-item img` no CSS (ex.: `max-width`, `max-height`) para os
-  logos ficarem bem enquadrados.
+  Salve os logos em `assets/img/` (pasta já criada).
 - **Catálogo em PDF**: `assets/catalogo/MGLASS-Catalogo.pdf` (29 páginas,
   ~3,4MB) — versão comprimida de `catálogoATUALIZADO032025.pdf`, fornecido
   pelo cliente (original tinha ~48MB, pesado demais para download em site
