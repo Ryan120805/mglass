@@ -59,15 +59,15 @@ Todos os pontos abaixo estão marcados com comentários `<!-- TODO -->` (HTML) o
   expansão para Norte/Nordeste desde 2022) extraídos da apresentação
   institucional da empresa — revisar/ajustar redação com o cliente se
   necessário.
-- **Parceiros**: 6 itens em `#parceiros`. **Acal** e **Normatel** já usam os
-  logos reais (`assets/img/parceiro-acal.jpg` e `parceiro-normatel.jpg`,
-  cedidos pelo cliente), com a classe extra `.parceiro-item.logo`. Os outros 4
-  (Kildary Home Center, Flux, Construtop, Amilco) ainda são placeholders de
-  texto — para trocar por logo real, siga o mesmo padrão:
+- **Parceiros**: 3 itens em `#parceiros`, todos com logo real cedido pelo
+  cliente — **Acal**, **Normatel** e **Flux** (`assets/img/parceiro-acal.jpg`,
+  `parceiro-normatel.jpg`, `parceiro-flux.jpg`), com a classe extra
+  `.parceiro-item.logo`. Para adicionar mais parceiros no futuro, siga o
+  mesmo padrão:
 
   ```html
   <div class="parceiro-item logo" data-reveal>
-    <img src="assets/img/parceiro-kildary.jpg" alt="Kildary Home Center" loading="lazy">
+    <img src="assets/img/parceiro-novo.jpg" alt="Nome do Parceiro" loading="lazy">
   </div>
   ```
 
