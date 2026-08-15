@@ -112,15 +112,33 @@ Tipografia: **Poppins** (corpo/menu, com letter-spacing generoso nos títulos
 pequenos) e **Cormorant Garamond** (títulos grandes/serifados), carregadas via
 Google Fonts.
 
-Favicon gerado a partir de `assets/logo/MGLASS_emblema.svg` (com fallback PNG
-e `apple-touch-icon`).
+Favicon gerado a partir de `assets/logo/MGLASS2_emblema_vinho.png`.
 
 ## Logos disponíveis (`assets/logo/`)
 
-- `MGLASS_logo_horizontal` — usado no cabeçalho
-- `MGLASS_logo_horizontal_mono` — versão monocromática (grafite), disponível
-  para uso sobre fundos claros/neutros
-- `MGLASS_logo_vertical` — usado no rodapé (aplica-se um filtro CSS para
-  clarear a versão mono sobre o fundo escuro do rodapé)
-- `MGLASS_emblema` / `MGLASS_badge_*` — usados como favicon e elemento
-  decorativo na seção "Sobre"
+Logo atual da marca (2ª versão, enviada pelo cliente em 2026-08-14), com fundo
+removido/recortado a partir dos JPEGs originais — ver "Como foram gerados"
+abaixo. São 4 arquivos PNG com fundo transparente:
+
+- `MGLASS2_logo_vinho.png` — logo completo (emblema + "MGLASS" + tagline) em
+  vinho, para fundos claros. Usado no cabeçalho.
+- `MGLASS2_logo_branco.png` — logo completo em branco, para fundos escuros.
+  Usado no rodapé.
+- `MGLASS2_emblema_vinho.png` — só o ícone circular (sem o texto), em vinho,
+  para fundos claros. Usado no favicon, no elemento decorativo do hero, no
+  selo giratório e no badge da seção "Sobre".
+- `MGLASS2_emblema_branco.png` — só o ícone circular em branco, para fundos
+  escuros. Gerado mas não usado em nenhum lugar no momento — disponível caso
+  precise de um ícone-só sobre fundo escuro no futuro.
+
+`MGLASS_apresentacao.png/svg` (arte antiga) segue em uso apenas no
+`og:image` (preview ao compartilhar o link) — pode ser atualizada depois.
+
+### Como foram gerados
+
+O cliente mandou 3 JPEGs com fundo sólido (branco, vinho e cinza-claro).
+Removi o fundo por diferença de cor (chroma key + descontaminação de cor nas
+bordas) e recortei automaticamente. Se o cliente mandar uma versão em vetor
+(AI/EPS/SVG) ou PNG já com fundo transparente no futuro, é melhor substituir
+esses PNGs por ela — o processo atual é uma reconstrução via imagem raster,
+não o arquivo master original do design.
