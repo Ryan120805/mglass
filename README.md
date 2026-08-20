@@ -57,16 +57,17 @@ do site. Usar `url('assets/img/...')` (sem o `../`) quebra a imagem.
 Todos os pontos abaixo estão marcados com comentários `<!-- TODO -->` (HTML) ou
 `// TODO` (JS) diretamente no código, para serem fáceis de encontrar:
 
-- **Telefone/WhatsApp**: o número `5599999999999` é placeholder. Aparece em
-  5 lugares em `index.html` (header, seção de contato, rodapé, botão flutuante
-  e barra fixa mobile de WhatsApp) — recomenda-se usar Localizar e Substituir.
-  O link `tel:+5599999999999` (barra fixa mobile) também precisa ser atualizado.
-- **E-mail**: `contato@mglass.com.br` é placeholder.
+- ~~**Telefone/WhatsApp**~~ ✅ já é o número real: `(85) 9729-8418`
+  (`+55 85 9729-8418`), em todos os 6 links do site (header, contato, rodapé,
+  botão flutuante e barra fixa mobile).
+- **E-mail**: `contato@mglass.com.br` ainda é placeholder.
 - **Endereço completo da sede** (hoje só consta "Fortaleza, CE") e horário de
   funcionamento, se aplicável: seção "Contato" (`#contato`).
 - **Mapa**: há um placeholder tracejado em `.mapa-placeholder` — substitua pelo
   `<iframe>` do Google Maps (ou similar) com o endereço real.
-- **Redes sociais**: links `href="#"` no rodapé (Instagram/Facebook).
+- **Redes sociais**: ~~Instagram~~ ✅ já aponta para
+  `instagram.com/mglassoficial` no rodapé. Facebook ainda é `href="#"`
+  placeholder.
 - **Texto institucional** da seção "Sobre": já usa dados reais (fundação em
   2018, +20 anos de experiência familiar, sede em Fortaleza, 25 colaboradores,
   expansão para Norte/Nordeste desde 2022) extraídos da apresentação
