@@ -86,12 +86,13 @@ Todos os pontos abaixo estão marcados com comentários `<!-- TODO -->` (HTML) o
   ```
 
   Salve os logos em `assets/img/` (pasta já criada).
-- **Catálogo em PDF**: `assets/catalogo/MGLASS-Catalogo.pdf` (29 páginas,
-  ~3,4MB) — versão comprimida de `catálogoATUALIZADO032025.pdf`, fornecido
-  pelo cliente (original tinha ~48MB, pesado demais para download em site
-  mobile-first; foi recomprimido a 120dpi/JPEG q55, mantendo texto e fotos
-  legíveis). Quando houver uma versão mais nova, gere um PDF novo e
-  substitua esse arquivo mantendo o mesmo nome, sem precisar mexer no HTML.
+- **Catálogo em PDF**: `assets/catalogo/MGLASS-Catalogo.pdf` (30 páginas,
+  ~5,2MB) — catálogo de produtos completo, redesenhado do zero a partir dos
+  dados reais de `catálogoATUALIZADO032025.pdf` (276 SKUs). Tem capa,
+  sumário com paginação, página "Sobre/Diferenciais", uma página por família
+  de produto (foto + tabela Tamanho/Cor/Código) e página de contato com QR
+  do WhatsApp. Código-fonte de geração (Python + HTML/CSS + Playwright) fica
+  fora do repositório do site; peça se precisar gerar uma nova edição.
   O botão "Baixar Catálogo (PDF)" está na seção "Produtos" (`.catalogo-cta`).
 - **Formulário de contato**: hoje só mostra uma mensagem local (não envia
   e-mail nem dados a lugar nenhum). Ver `// TODO` em `js/main.js` para
